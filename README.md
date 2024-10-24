@@ -37,8 +37,8 @@ This is a full-stack application enabling users to deploy GitHub repositories vi
 ### Install Dependencies for Each Service
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone [<repository-url>](https://github.com/ArindamDongre/GitDeploy.git)
+   cd GitDeploy
    ```
 2. For each service folder (upload-service, deployment-service, request-handler, frontend), run:
    ```bash
