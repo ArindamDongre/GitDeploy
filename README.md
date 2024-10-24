@@ -4,12 +4,12 @@
 This is a full-stack application enabling users to deploy GitHub repositories via a user-friendly interface.
 
 ## Folder Structure
-   ```bash
-   ├── upload-service  # Handles cloning and uploading repositories
-   ├── deployment-service  # Manages downloading, unzipping, and building projects
-   ├── request-handler  # Serves files from S3 based on requests
-   └── frontend  # User interface components
-   ```
+```bash
+├── upload-service  # Handles cloning and uploading repositories
+├── deployment-service  # Manages downloading, unzipping, and building projects
+├── request-handler  # Serves files from S3 based on requests
+└── frontend  # User interface components
+```
 
 ## Technologies Used
 
