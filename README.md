@@ -47,4 +47,9 @@ This is a full-stack application enabling users to deploy GitHub repositories vi
 
 ## Configuration
 Create a .env file in each folder with the following variables:
+AWS_REGION=<your-aws-region>
+AWS_ACCESS_KEY_ID=<your-access-key-id>
+AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
+AWS_BUCKET_NAME=<your-bucket-name>
+
 
