@@ -1,0 +1,31 @@
+{
+  "name": "deploy-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.675.0",
+    "aws-sdk": "^2.1691.0",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "p-limit": "^6.1.0",
+    "p-queue": "^8.0.1",
+    "path": "^0.12.7",
+    "redis": "^4.7.0",
+    "stream": "^0.0.3",
+    "typescript": "^5.6.3",
+    "unzipper": "^0.12.3",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "^0.0.42",
+    "@types/node": "^22.7.7",
+    "@types/unzipper": "^0.10.10"
+  }
+}
