@@ -54,4 +54,27 @@ AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
 AWS_BUCKET_NAME=<your-bucket-name>
 ```
 
+## Bulding and Running the Services
+1. Start the Upload Service, Deploy Service and Request Handler by running:
+   ```bash
+   npx tsc --build
+   node .\dist\index.js
+   ```
+2. Start the Frontend by running:
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+
+### Upload Service
+- **Endpoint**: `POST/deploy`
+   - **Request body**:
+     ```
+     {
+       "repoUrl": "https://github.com/user/repo.git"
+     }
+     ```
+
+
 
