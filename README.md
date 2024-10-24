@@ -37,7 +37,7 @@ This is a full-stack application enabling users to deploy GitHub repositories vi
 ### Install Dependencies for Each Service
 1. Clone the repository:
    ```bash
-   git clone [<repository-url>](https://github.com/ArindamDongre/GitDeploy.git)
+   git clone https://github.com/ArindamDongre/GitDeploy.git
    cd GitDeploy
    ```
 2. For each service folder (upload-service, deployment-service, request-handler, frontend), run:
@@ -78,5 +78,25 @@ AWS_BUCKET_NAME=<your-bucket-name>
   - This endpoint clones the specified Git repository, zips it, and uploads it to the S3 bucket.
 - **Endpoint**: `GET /status?id=<id>`
   - Returns the upload status of the repository with the specified ID.
+
+### Deployment Service
+- Continuously listens for new build requests from the Redis queue, downloads, unzips, and builds the projects.
+
+### Request Handler
+- Serves the built files from S3 based on incoming requests.
+
+### Frontend
+- Provides a user interface for interacting with the services.
+
+## Notes
+- Ensure the Redis server is running before starting the services.
+- Review the AWS S3 permissions to allow necessary operations for each service.
+
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
 
 
