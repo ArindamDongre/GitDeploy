@@ -11,7 +11,6 @@ This is a full-stack application enabling users to deploy GitHub repositories vi
    └── frontend  # User interface components
    ```
 
-
 ## Technologies Used
 
 ### Backend
@@ -40,3 +39,12 @@ This is a full-stack application enabling users to deploy GitHub repositories vi
    ```bash
    git clone <repository-url>
    cd <repository-folder>
+   ```
+2. For each service folder (upload-service, deployment-service, request-handler, frontend), run:
+   ```bash
+   npm install
+   ```
+
+## Configuration
+Create a .env file in each folder with the following variables:
+
