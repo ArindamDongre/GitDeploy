@@ -57,7 +57,6 @@ AWS_BUCKET_NAME=<your-bucket-name>
 ## Bulding and Running the Services
 1. Start the Upload Service, Deploy Service and Request Handler by running:
    ```bash
-   cd upload
    npx tsc --build
    node .\dist\index.js
    ```
@@ -73,9 +72,11 @@ AWS_BUCKET_NAME=<your-bucket-name>
    - Request body:
      ```
      {
-       "repoUrl": "https://github.com/user/repo.git"
+       "repoUrl": "https://github.com/username/repo"
      }
      ```
-
+  - This endpoint clones the specified Git repository, zips it, and uploads it to the S3 bucket.
+- **Endpoint**: `GET /status?id=<id>`
+  - Returns the upload status of the repository with the specified ID.
 
 
