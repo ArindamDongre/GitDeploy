@@ -57,6 +57,7 @@ AWS_BUCKET_NAME=<your-bucket-name>
 ## Bulding and Running the Services
 1. Start the Upload Service, Deploy Service and Request Handler by running:
    ```bash
+   cd upload
    npx tsc --build
    node .\dist\index.js
    ```
@@ -69,7 +70,7 @@ AWS_BUCKET_NAME=<your-bucket-name>
 
 ### Upload Service
 - **Endpoint**: `POST/deploy`
-   - **Request body**:
+   - Request body:
      ```
      {
        "repoUrl": "https://github.com/user/repo.git"
